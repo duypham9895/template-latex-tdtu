@@ -1,0 +1,239 @@
+\documentclass[oneside, 12pt]{report}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{geometry}
+% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}
+% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		
+% Activate for rotated page geometry
+
+
+\usepackage{tabularx}
+
+\usepackage[parfill]{parskip}    		
+% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+% TeX will automatically convert eps --> pdf in pdflatex
+
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage[unicode]{hyperref}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage[nottoc]{tocbibind}
+
+\usepackage{graphicx}
+%%line height and customize paragraph
+\setlength{\parindent}{2.5em}
+\renewcommand{\baselinestretch}{1.5}
+
+%%customize paragraph after section, subsection, subsubsection
+\setcounter{secnumdepth}{4}
+\titlespacing{\section}{0pt}{1.5ex plus .1ex minus .2ex}{1pc}
+\titlespacing{\subsection}{0pt}{1.5ex plus .1ex minus .2ex}{1pc}
+\titlespacing{\subsubsection}{0pt}{1.5ex plus .1ex minus .2ex}{1pc}
+\titlespacing{\paragraph}{0pt}{1.5ex plus .1ex minus .2ex}{1pc}
+
+\DeclareUnicodeCharacter{200A}{!!!FIX ME!!!} 
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+\begin{document}
+\graphicspath{ {./images/Logo/} }
+\begin{titlepage}
+	\begin{center}
+		{\large TỔNG LIÊN ĐOÀN LAO ĐỘNG VIỆT NAM}\\
+		{\large \textbf {ĐẠI HỌC TÔN ĐỨC THẮNG}}\\
+		{\large \textbf {KHOA CÔNG NGHỆ THÔNG TIN}}\\
+		
+	
+		\vspace{12pt}
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.3\textwidth]{TDTU_logo}
+		\end{figure}
+		
+		\vspace{12pt}
+	
+		{\Large \textbf {TÊN MÔN HỌC}}\\
+		\vspace{22pt}
+		{\LARGE \textbf { NỘI DUNG BÁO CÁO }}
+	\end{center}
+
+
+
+	\vspace{100pt}
+
+	\begin{flushright}
+		\textit{Người hướng dẫn: } \textbf{Giáo Viên}\\
+		\textit{Người thực hiện: } \textbf{Sinh Viên - MSSV}\\
+		Khóa: \textbf{: 21}\\
+	\end{flushright}
+
+	\vspace{82pt}
+
+	\center {\large \textbf {TP.Hồ Chí Minh, 2020 }}\\
+\end{titlepage}
+
+\pagenumbering{roman}
+\setcounter{secnumdepth}{-1}
+
+\newpage
+\section{\centering LỜI NÓI ĐẦU}
+
+Trong quá trình hoàn thành bài báo cáo của bộ môn ..., bên cạnh sự nỗ lực và cố gắng của bản thân chúng em không thể không nhắc đến sự quan tâm và hướng dẫn tận tình của quý thầy cô cố vấn.
+
+Để hoàn thành bài báo cáo giữa kì này em xin gửi lời cám ơn đến thầy/cô ..., người đã dùng vốn tri thức cùng những kinh nghiệm quý báu của mình để giúp đỡ chúng em trong suốt quá trình học tập trên lớp. Nhờ những lời hướng dẫn và dạy bảo tận tình đó, chúng em đã tích lũy thêm cho mình không ít kiến thức cùng sự hiểu biết để hoàn thành bài báo cáo một cách hiệu quả nhất.
+
+Đồng thời nhóm em xin cảm ơn trường Tôn Đức Thắng đã tạo điều kiện về cơ sở vật chất và thông tin cũng như kiến thức về môn học để áp dụng vào đồ án, cho nhóm chúng em có cơ hội để bước ra thực tế để áp dụng những kiến thức mà các thầy cô đã giảng dạy.
+
+Vì kiến thức bản thân còn hạn chế, trong quá trình làm việc, hoàn thành bài báo cáo giữa kì này em không tránh khỏi những sai sót, kính mong được nhận được những ý kiến đóng góp từ thầy. Trân trọng cảm ơn.
+
+
+\newpage
+\section{\centering BÁO CÁO NÀY ĐƯỢC HOÀN THÀNH TẠI TRƯỜNG ĐẠI HỌC TÔN ĐỨC THẮNG}
+
+Tôi xin cam đoan đây là báo cáo giữa kì của tôi và được sự hướng dẫn của thầy/cô ...; Các nội dung nghiên cứu, kết quả trong đề tài này là trung thực và chưa công bố dưới bất kỳ hình thức nào trước đây. Những số liệu trong các bảng biểu phục vụ cho việc phân tích, nhận xét, đánh giá được chính tác giả thu thập từ các nguồn khác nhau có ghi rõ trong phần tài liệu tham khảo.
+
+Ngoài ra, trong đồ án còn sử dụng một số nhận xét, đánh giá cũng như số liệu của các tác giả khác, cơ quan tổ chức khác đều có trích dẫn và chú thích nguồn gốc.
+
+
+\textbf{Nếu phát hiện có bất kỳ sự gian lận nào tôi xin hoàn toàn chịu trách nhiệm về nội dung đồ án của mình.} Trường đại học Tôn Đức Thắng không liên quan đến những vi phạm tác quyền, bản quyền do tôi gây ra trong quá trình thực hiện (nếu có).
+
+\begin{flushright}
+	\textit{TP.Hồ Chí Minh \today}\\
+	\textit{(Ký tên và ghi rõ họ tên)}
+\end{flushright}
+
+\newpage
+\section{\centering PHẦN XÁC NHẬN VÀ ĐÁNH GIÁ CỦA GIẢNG VIÊN}
+
+
+\textbf{Phần xác nhận của GV hướng dẫn}
+
+\footnotesize
+\begin{center}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+\end{center}
+
+
+\begin{flushright}
+	\textit{TP.Hồ Chí Minh, \hspace*{50pt} 2019}\\
+	\textit{(Ký tên và ghi rõ họ tên)}
+\end{flushright}
+
+\newpage
+\textbf{Phần đánh giá của GV chấm bài}
+
+\footnotesize
+\begin{center}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+	\noindent\rule{17cm}{0.4pt}
+\end{center}
+
+\begin{flushright}
+	\textit{TP.Hồ Chí Minh, \hspace*{50pt} 2019}\\
+	\textit{(Ký tên và ghi rõ họ tên)}
+\end{flushright}
+
+\graphicspath{ {./images/Pictures/} }
+
+%%
+\setcounter{secnumdepth}{2}
+\pagenumbering{arabic}
+\tableofcontents
+
+%%
+\listoffigures
+
+%%
+\listoftables
+
+
+\chapter{ MỞ ĐẦU }
+
+\section{ Giới thiệu đề tài }
+
+\subsection{Chi tiết}
+
+
+
+\begin{thebibliography}{}
+	\bibitem{uxdesign}
+		UX Design,
+		\\\texttt{\url{https://uxdesign.cc/10-usability-heuristics-every-designer-should-know-129b9779ac53}}
+
+\end{thebibliography}
+
+\end{document}  
